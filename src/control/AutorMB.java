@@ -23,7 +23,6 @@ import persistence.AutorDaoImpl;
 /**
  * Classe reponsável pelo controle do Autor
  * 
- * @author hury
  *
  */
 

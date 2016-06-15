@@ -18,7 +18,7 @@ public class LoginMB implements Serializable {
 		
 		if ("Admin".equals(usuario) && "123456".equals(senha)) { 
 			logado = true;
-			pagina = "autor?faces-redirect=true";
+			pagina = "menu?faces-redirect=true";
 		} else { 
 			logado = false;
 		}
