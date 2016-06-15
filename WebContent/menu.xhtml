@@ -17,10 +17,20 @@
 		</h:outputLabel>
 		
 		<h:form>
-			<h:panelGrid columns="2">
+			<h:panelGrid columns="4" cellpadding="5">
 			
-			
-			
+				<h:commandButton 	value="Autor" 
+									action="#{menuMB.autor}"/>	
+				
+				<h:commandButton 	value="Editora" 
+									action="#{menuMB.editora}"/>	
+				
+				<h:commandButton 	value="Categoria" 
+									action="#{menuMB.categoria}"/>
+				
+				<h:commandButton 	value="Livro" 
+									action="#{menuMB.livro}"/>	
+						
 		</h:panelGrid>
 		</h:form>			
 	</h:body>
