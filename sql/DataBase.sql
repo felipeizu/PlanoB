@@ -77,6 +77,11 @@ foreign key (idlivro) references livro(id),
 foreign key (idautor) references autor(id)
 )
 
+create table usuario(
+nick varchar(10) not null,
+senha varchar(10) not null,
+primary key (nick)
+)
 
 --------------Inserts de Teste--------------------
 
@@ -86,7 +91,7 @@ select * from autor
 
 INSERT INTO editora VALUES ('Elsiever','1137073500', '55789390000112', '04532002' ,'SP','São Paulo','bairro', 'R. Bandeira Paulista', 702 ,'complement')
 INSERT INTO editora VALUES ('Companhia das Letras','1137073500', '55789390000112', '04532002' ,'SP','São Paulo','bairro', 'R. Bandeira Paulista', 702 ,'complement')
---INSERT INTO editora VALUES ('Brasil inc','1137073500', '55789390000112', '04532002' ,'SP','SÃƒÂ£o Paulo','bairro', 'R. Bandeira Paulista', 702 ,'complement')
+INSERT INTO editora VALUES ('Brasil inc','1137073500', '55789390000112', '04532002' ,'SP','SÃƒÂ£o Paulo','bairro', 'R. Bandeira Paulista', 702 ,'complement')
 
 INSERT INTO livro VALUES (1,'Principios de Análise','9780141182957',414,1,'brochura',1949,'Engenharia','Português','PrincipiosAnaliseSistemas.jpg', 129.00,'resumo_bezerra.pdf', '150120153158_PrincipiosdeAnaliseeProjeto_0.pdf'),
 (2,'1984','9780141182957',414,1,'brochura',1949,'ficÃ§Ã£o cientÃ­fica ','Português','1984.jpg', 50.00,'11','22')
@@ -98,6 +103,8 @@ insert into categoria values ('romance', 'muito amor')
 insert into livrocategoria values (1,2), (2,1)
 
 insert into livroautor values (1,1),(2,2)
+
+insert into usuario values ('adm', '123')
 
 select* from livro
 select * from autor
